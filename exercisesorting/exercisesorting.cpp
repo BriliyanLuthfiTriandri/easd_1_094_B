@@ -18,4 +18,9 @@ void merge(vector<int>& brili, int left, int mid, int right)
     vector<int> left_brili(n1);
     vector<int> right_brili(n2);
 
+    for (int i = 0; i < n1; i++)
+        left_brili[i] = brili[left + i];
+    for (int BT = 0; BT < n2; BT++)
+        right_brili[BT] = brili[mid + 1 + BT];
+
 }
